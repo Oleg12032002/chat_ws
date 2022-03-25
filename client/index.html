@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Char WS</title>
+    
+    <!-- <link rel="shortcut icon" href="#"> -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="chat">
+    <div id="rooms">
+      <div id="collection-rooms"></div>
+
+      <form class="form form--small" id="room">
+        <input type="text" placeholder="room name" autocomplete="off">
+        <button type="submit">Join</button>
+      </form>
+
+    </div>
+
+    <div class="messages-block">
+      <div id="messages"></div>
+
+      <form class="form" id="messageForm">
+        <div style="position: absolute; top:-10px;"class="typing" id="typingStatus"></div>
+        <input type="text" placeholder="your message here" autocomplete="off">
+        <button type="submit">Send</button>
+      </form>
+    </div>
+    <div class="user-info-card">
+      <div class="avatar">
+          <img src="https://i.pravatar.cc/400"/>
+      </div>
+      <div class="username" id="username">
+          
+      </div>
+      
+      <div class="user-information">
+          
+          <div class="info-card">
+              <div>
+                  <img src="src/icon/email.png" />
+                  <div>user@gmail.com</div>
+              </div>
+              
+          </div>
+
+          <div class="info-card">
+              <div>
+                  <img src="src/icon/phone.png" />
+                  <div>+(380) 088 888 88 88</div>
+              </div>
+              
+          </div>
+
+      </div>
+  </div>
+  </div>
+
+
+<!-- <main class="main">
+  <aside>
+    <pre class="username" id="username"></pre>
+
+    <pre class="scrollable" id="rooms"></pre>
+
+    <form class="form form--small" id="room">
+      <input type="text" placeholder="room name" autocomplete="off">
+      <button type="submit">join</button>
+    </form>
+  </aside>
+
+  <article>
+    <pre class="scrollable" id="messages"></pre>
+
+    <pre class="typing" id="typingStatus"></pre>
+
+    <form class="form" id="messageForm">
+      <input type="text" placeholder="your message here" autocomplete="off">
+      <button type="submit">send</button>
+    </form>
+  </article>
+</main> -->
+
+<script src="https://cdn.socket.io/4.4.1/socket.io.min.js"></script>
+<script type="module" src="./main.js"></script>
+
+
+</body>
+</html>
